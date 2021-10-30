@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab3_5</string>
+    <string name="about">About</string>
+    <string name="back">Go Back</string>
+    <string name="fragment_1">Element1</string>
+    <string name="to_second">To Second</string>
+    <string name="to_about">To About</string>
+    <string name="fragment_2">Element2</string>
+    <string name="to_first">To First</string>
+    <string name="to_third">To Third</string>
+    <string name="fragment_3">Element3</string>
+</resources>
