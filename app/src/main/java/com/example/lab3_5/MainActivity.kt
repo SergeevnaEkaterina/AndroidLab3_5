@@ -19,18 +19,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         navController = (supportFragmentManager.findFragmentById(R.id.fragContainer)
                 as NavHostFragment).navController
-
         drawer = findViewById(R.id.drawer_layout)
         appBarConfiguration = AppBarConfiguration(navController.graph, drawer)
-
         setupActionBarWithNavController(
             navController,
             AppBarConfiguration(navController.graph, drawer)
         )
-
         findViewById<NavigationView>(R.id.nav_view).setupWithNavController(navController)
     }
 
@@ -41,6 +37,7 @@ class MainActivity : AppCompatActivity() {
             navController
         ) || super.onOptionsItemSelected(item)
     }
+
     override fun onSupportNavigateUp(): Boolean {
         return if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START)

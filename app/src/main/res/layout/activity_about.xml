@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         android:id="@+id/aboutActivity"
         tools:context=".AboutActivity"
-        android:background="#00FF7F">
+        >
 
         <TextView
             android:id="@+id/txtInfo"
@@ -16,17 +16,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            />
-
-        <Button
-            android:id="@+id/btnBack"
-            android:text="@string/back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/txtInfo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
