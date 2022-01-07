@@ -11,14 +11,13 @@
         android:theme="@style/Theme.Lab3_5">
 
         <activity
-            android:name="com.example.lab3_5.activityAbout"
-            android:exported="true" />
+            android:name=".activityAbout"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.example.lab3_5.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -6,13 +6,19 @@ import com.example.lab3_5.databinding.ActivityAboutBinding
 
 class activityAbout : AppCompatActivity() {
 
+    private lateinit var binding: ActivityAboutBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        val binding = ActivityAboutBinding.inflate(layoutInflater)
+        binding = ActivityAboutBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.btnBack.setOnClickListener {
             finish()
         }
     }
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
+    }
+
 }

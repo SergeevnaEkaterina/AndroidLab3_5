@@ -13,7 +13,7 @@ class Fragment3 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = Fragment3Binding.inflate(layoutInflater)
         val navController = findNavController()
         binding.btnToFirst.setOnClickListener {
@@ -22,9 +22,7 @@ class Fragment3 : Fragment() {
         binding.btnToSecond.setOnClickListener {
             navController.navigate(R.id.action_fragment3_to_fragment2)
         }
-        binding.btnToAbout.setOnClickListener {
-            (activity as MainActivity).goToAbout()
-        }
+
         return binding.root
     }
 
